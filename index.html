@@ -7,15 +7,71 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+         <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Shop
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Toys</a>
+          <a class="dropdown-item" href="#">Board game</a>
+          <a class="dropdown-item" href="#">funni sox</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</nav>
+
+
+
+
 	<div class="container">
 		<div class="py-5 text-center">
 			<img class="d-block mx-auto mb-4" src="img/world.svg" alt="логотип планеты Земля" width="72" height="72" >
 			<h2>Test form</h2>
-			<p class="lead"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae tempore iusto quidem vitae consectetur sed voluptatibus asperiores sapiente eum voluptates debitis iste, non. Blanditiis illum reprehenderit, corporis ullam nihil impedit.</p>
+			<p class="lead"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae tempore iusto quidem vitae consectetur sed voluptatibus asperiores sapiente eum voluptates debitis iste, non. Blanditiis illum reprehenderit, corporis ullam nihil impedit.
+			</p>
 			<div class="row">
-				<div class="col"></div>
-				<div></div>
-				<div class="col"></div>
+								<div class="col-md-4 order-md-2 mb-4">
+					<h3>Your cart</h3>
+				</div>
+					
+
+				<div class="col-md-8 order-md-1">
+					<h3 class="mb-3">Billing adress</h3>
+					<form class="needs-validation">
+						<div class="row">
+							<div class="col-md-6 mb-3">
+								<label for="first-name">
+									First name
+								</label>
+								<input type="text" id="first-name" class="form-control" placeholder="Имя" value="Имя">
+								<div class="invalid-feedback">
+									Looks good
+								</div>
+							</div>
+								<div class="col-md-6 mb-3">
+								<label for="last-name">
+									Last name
+								</label>
+								<input type="text" id="last-name" class="form-control" placeholder="Фамилия" value="Фамилия" >
+							</div>
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
 		
